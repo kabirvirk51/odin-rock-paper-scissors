@@ -1,1 +1,1 @@
-# odin-rock-paper-scissors
+Hi, this is my third main project i will be completing in the Odin Project foundations course. This project will be done solely in JavaScript. Thanks for following my journey!
