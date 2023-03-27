@@ -39,7 +39,21 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
+
+
+function game() {
+
 const computerSelection = getComputerChoice();
-const playerSelection = 'paper'
+const playerSelection = window.prompt("Rock, Paper or Scissors?");
+
+
+console.log(playRound(playerSelection, computerSelection)); // Started Function, no clue how to keep score yet
+console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
 console.log(playRound(playerSelection, computerSelection));
 
+
+}
+
+game();
