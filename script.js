@@ -41,19 +41,20 @@ function playRound(playerSelection, computerSelection) {
 
 
 
+
 function game() {
 
-const computerSelection = getComputerChoice();
-const playerSelection = window.prompt("Rock, Paper or Scissors?");
 
+let playerScore = 0; //Still need to find a way to keep score
+let gameScore = 0;
 
-console.log(playRound(playerSelection, computerSelection)); // Started Function, no clue how to keep score yet
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-
+for (let i = 0; i!=5; i++) {   //Found a way to make the game function run five rounds
+    let computerSelection = getComputerChoice();  
+    let playerSelection = window.prompt("Rock, Paper or Scissors?");
+    console.log(playRound(playerSelection, computerSelection));
+}
 
 }
 
 game();
+
