@@ -39,21 +39,38 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
-
-
-
 function game() {
 
 
-let playerScore = 0; //Still need to find a way to keep score
+let playerScore = 0; 
 let gameScore = 0;
 
-for (let i = 0; i!=5; i++) {   //Found a way to make the game function run five rounds
+for (let i = 0; i!=5; i++) {   
     let computerSelection = getComputerChoice();  
     let playerSelection = window.prompt("Rock, Paper or Scissors?");
     console.log(playRound(playerSelection, computerSelection));
-}
 
+   roundResult = playRound(playerSelection, computerSelection);
+
+    if (roundResult === 'You win! Rock beats Scissors' || roundResult === 'You win! Paper beats Rock' || roundResult === 'You win! Scissors beats Paper') {
+        playerScore += 1;
+        console.log('Player Score: ' + playerScore);
+    } else if (roundResult === 'You lose! Rock beats Scissors' || roundResult === 'You lose! Paper beats Rock' ||roundResult ===  'You lose! Scissors beats Paper') {
+        gameScore += 1;
+        console.log('Game Score: ' + gameScore);
+    } else if (roundResult === 'Invalid Choice!' || roundResult === 'It is a tie!') {
+        console.log('Try Again!');
+    }
+
+} 
+
+if (playerScore > gameScore) {
+    console.log("You Won! " + "Final Score is: " + playerScore + " - " + gameScore);
+} else if (gameScore > playerScore) {
+    console.log("You Lost " + "Final Score is: " + gameScore + " - " + playerScore);
+} else if (playerScore = gameScore ) {
+    console.log("The game is a tie!")
+}
 }
 
 game();
