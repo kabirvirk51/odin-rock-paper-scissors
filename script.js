@@ -50,7 +50,7 @@ for (let i = 0; i!=5; i++) {
     let playerSelection = window.prompt("Rock, Paper or Scissors?");
     console.log(playRound(playerSelection, computerSelection));
 
-   roundResult = playRound(playerSelection, computerSelection);
+  let roundResult = playRound(playerSelection, computerSelection);
 
     if (roundResult === 'You win! Rock beats Scissors' || roundResult === 'You win! Paper beats Rock' || roundResult === 'You win! Scissors beats Paper') {
         playerScore += 1;
@@ -68,7 +68,7 @@ if (playerScore > gameScore) {
     console.log("You Won! " + "Final Score is: " + playerScore + " - " + gameScore);
 } else if (gameScore > playerScore) {
     console.log("You Lost " + "Final Score is: " + gameScore + " - " + playerScore);
-} else if (playerScore = gameScore ) {
+} else if (playerScore === gameScore ) {
     console.log("The game is a tie!")
 }
 }
