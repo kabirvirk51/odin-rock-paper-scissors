@@ -116,16 +116,16 @@ function game() {
 
     if (playerScore == 5) {
       resultsDIV2.textContent =
-        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore;
+        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (gameScore == 5) {
       resultsDIV2.textContent =
-        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore;
+        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (playerScore == 5 && gameScore == 5) {
-      resultsDIV2.textContent = "The game is a tie!";
+      resultsDIV2.textContent = "The game is a tie!" + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     }
@@ -188,16 +188,16 @@ function game() {
 
     if (playerScore == 5) {
       resultsDIV2.textContent =
-        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore;
+        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (gameScore == 5) {
       resultsDIV2.textContent =
-        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore;
+        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (playerScore == 5 && gameScore == 5) {
-      resultsDIV2.textContent = "The game is a tie!";
+      resultsDIV2.textContent = "The game is a tie!" + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     }
@@ -260,16 +260,16 @@ function game() {
 
     if (playerScore == 5) {
       resultsDIV2.textContent =
-        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore;
+        "You Won! " + "Final Score is: " + playerScore + " - " + gameScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (gameScore == 5) {
       resultsDIV2.textContent =
-        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore;
+        "You Lost, " + "Final Score is: " + gameScore + " - " + playerScore + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     } else if (playerScore == 5 && gameScore == 5) {
-      resultsDIV2.textContent = "The game is a tie!";
+      resultsDIV2.textContent = "The game is a tie!" + ". " + "Please refresh the page to play again.";
       resultsDIV2.style.cssText =
         "display: flex; justify-content: center; margin-top: 64px; font-size: 25px; color: black;";
     }
